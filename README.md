@@ -11,19 +11,15 @@ A crawler for downloading image files from [農藥資訊服務網](http://pestic
 
 # 流程
 
-1. 讀取 http://pesticide.baphiq.gov.tw/web/Insecticides_MenuItem5_4.aspx?id=I201
-2. 計算總頁數 和 每頁個數
-3. 抓取 list
-4. 下載圖檔
-5. 換頁 `'__EVENTARGUMENT': 'Page$2'`
-6. 重複 2,3
+1. read-first 存 viewstate, eventvalidation, 計算總頁數 `pages` 和 每頁個數 `entries`
+2. 抓取 list 和 下載圖檔
+3. 從第二頁到最後一頁
+4. 重複 2
 
 # TODO
 
-1. 流程 2
-2. 流程 5
-3. 流程 6
-
+1. 驗證 crawler 是否能抓取全部圖檔
+2. 產生相對應農藥名與圖檔名稱的 json 檔
 
 # LICENSE
 
