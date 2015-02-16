@@ -11,7 +11,7 @@ A crawler for downloading image files from [農藥資訊服務網](http://pestic
 
 # TODO
 
-1. 函數化
+1. 爬分頁
 2. 全自動抓取
 
 # LICENSE
